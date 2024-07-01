@@ -8,8 +8,8 @@ chrt -f -p 54 $(pgrep ksoftirqd/2)
 chrt -f -p 54 $(pgrep ksoftirqd/3)
 
 #Uncomment for MPD Affinity and Priority
-chrt -f -p 81 $(pidof mpd)
-taskset -c -p 1 $(pidof mpd)
+chrt -r -p 99 $(pidof mpd)
+taskset -c -p 3 $(pidof mpd)
 
 #USB Dacs Uncomment to reduce USB latency
 modprobe snd-usb-audio nrpacks=1
