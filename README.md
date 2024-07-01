@@ -1,5 +1,5 @@
 # Linux-Audio
-Debian Based RPi tweaks for improved sound. For TinyCore based systems see [TinyCore Sound Tweaks](https://github.com/dynobot/TinyCore-Sound-Adjustments)
+Debian Based RPi tweaks for improved sound.
  
  To improve the sound of the Raspberry Pi using Debian and other distributions of Linux several parameters can be adjusted.
  1) Improving the priority of the Audio group
@@ -21,17 +21,17 @@ Debian Based RPi tweaks for improved sound. For TinyCore based systems see [Tiny
 - Odroid C2
  ______________________________________________________________________________________________________________________________
  ## Automated Install
- curl -sSL https://github.com/dynobot/Linux-Audio-Adjustments/raw/master/basic-install.sh | bash
+ curl -sSL https://github.com/zamiere/Linux-Audio-Adjustments/raw/master/basic-install.sh | bash
  
  ##### Optional method:
- - wget https://github.com/dynobot/Linux-Audio-Adjustments/raw/master/basic-install.sh
+ - wget https://github.com/zamiere/Linux-Audio-Adjustments/raw/master/basic-install.sh
  - chmod 755 basic-install.sh
  - sudo ./basic-install.sh
  ## Automated Removal
- curl -sSL https://github.com/dynobot/Linux-Audio-Adjustments/raw/master/remove.sh | bash
+ curl -sSL https://github.com/zamiere/Linux-Audio-Adjustments/raw/master/remove.sh | bash
  
  ##### Optional method:
- - wget https://github.com/dynobot/Linux-Audio-Adjustments/raw/master/remove.sh
+ - wget https://github.com/zamiere/Linux-Audio-Adjustments/raw/master/remove.sh
  - chmod 755 remove.sh
  - sudo ./remove.sh
  
