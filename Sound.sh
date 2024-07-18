@@ -11,6 +11,10 @@ chrt -f -p 54 $(pgrep ksoftirqd/3)
 chrt -r -p 99 $(pidof mpd)
 taskset -c -p 3 $(pidof mpd)
 
+#Uncomment for Tidal Connect Affinity and Priority
+chrt -r -p 99 $(pidof tidal_connect_application)
+taskset -c -p 3 $(pidof tidal_connect_application)
+
 #USB Dacs Uncomment to reduce USB latency
 modprobe snd-usb-audio nrpacks=1
 
