@@ -40,10 +40,6 @@ border 'Max user watches'
 
 echo 'fs.inotify.max_user_watches = 524288' >> /etc/sysctl.d/99-max_user-watches.conf
 
-border 'Kernel threadirqs'
-
-echo ' threadirqs' >> /boot/firmware/cmdline.txt
-
 border 'Creating System Service'
 
 [[ -f /etc/rc.local ]] || echo -e '#/bin/bash\n\nexit 0' > /etc/rc.local
